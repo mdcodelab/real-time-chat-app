@@ -11,11 +11,11 @@ function App() {
   const[username, setUsername]=React.useState("");
   const [room, setRoom] = React.useState("");
 
-  function joinRoom () {
-    if(username !== "" && room !==""){
+  const joinRoom = () => {
+    if (username !== "" && room !== "") {
       socket.emit("join_room", room);
     }
-  }
+  };
 
   return (
     <Wrapper className="App">
