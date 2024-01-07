@@ -1,5 +1,5 @@
 import React from "react";
-import './App.css';
+//import './App.css';
 import styled from "styled-components";
 import { IoSendOutline } from "react-icons/io5";
 import io from "socket.io-client";
@@ -29,7 +29,15 @@ function App() {
 }
 
 const Wrapper = styled.div`
-
+    width: 100%;
+    max-width: 1200px;
+    height: 100vh;
+    background: #fff;
+    color: #212121;
+    font-family: "Open Sans", sans-serif;
+    display: grid;
+    place-items: center;
+  
 `;
 
 export default App;
